@@ -25,9 +25,9 @@ const users = {
 let cart = [];
 
 // use this to add a 1 second delay to all requests
-// app.use(function (req, res, next) {
-//   setTimeout(next, 1000);
-// });
+app.use(function (req, res, next) {
+  setTimeout(next, 1000);
+});
 
 app.get("/api/products", (req, res) => {
   let products = [
